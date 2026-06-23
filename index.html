@@ -13,18 +13,39 @@
   </head>
   <body>
     <!--Navigation bar-->
-    <ul class="nav justify-content-center bg-primary">
-      <li class="nav-item">
-        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="#">Contact us</a>
-      </li>
-    </ul>
+    <div>
+      <ul class="nav justify-content-center bg-primary p-4">
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="#"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light " href="#">Contact us</a>
+        </li>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success text-light bg-black" type="submit">
+            Search
+          </button>
+        </form>
+      </ul>
+    </div>
     <!--End Navigation bar-->
+
+    <!--Footer-->
+    <div class="card border-success mb-3">
+        <div class="card-footer bg-transparent bg-black">Footer</div>
+    </div>
+    <!--End Footer-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
