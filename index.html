@@ -13,37 +13,107 @@
   </head>
   <body>
     <!--Navigation bar-->
-    <div>
-      <ul class="nav justify-content-center bg-primary p-4">
+    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+      <a class="navbar-brand" href="#">Chathu</a>
+      <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#"
-            >Home</a
-          >
+          <a class="nav-link" href="#scrollspyHeading1">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">About</a>
+          <a class="nav-link" href="#scrollspyHeading2">Internet</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light " href="#">Contact us</a>
+          <a class="nav-link" href="#scrollspyHeading3">HTML Tags</a>
         </li>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success text-light bg-black" type="submit">
-            Search
-          </button>
-        </form>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading4">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading5">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading6">Contact Us</a>
+        </li>
+          </ul>
+        </li>
       </ul>
-    </div>
+    </nav>
+    
     <!--End Navigation bar-->
+
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example bg-body-tertiary p-3 rounded-2"
+      tabindex="0"
+    >
+    <div class="py-4 p-5" id="scrollspyHeading1">
+      <h2 id="scrollspyHeading1">Internet</h2>
+      <img src="Assets/image1.jpeg" alt="">
+      <h3>What is the Interent?</h3>
+      <p class="text-center">The Internet is a worldwide network of interconnected 
+        computers and devices that communicate with each other using 
+        standard communication protocols such as TCP/IP (Transmission 
+        Control Protocol/Internet Protocol). It enables users to share
+         information, access websites, send emails, stream videos, 
+         communicate instantly, and use various online services from 
+         anywhere in the world.</p>
+
+         <h3 class="py-4">History of the Internet</h3>
+         <ol>
+          <li class="fw-bold">1960s – The Beginning</li>
+          <p>The Internet began as a research project funded by 
+            the U.S. Department of Defense. A network called ARPANET 
+            (Advanced Research Projects Agency Network) was developed 
+            to connect computers at different research institutions. 
+            The first successful communication between two computers 
+            occurred in 1969.</p>
+            <li>1970s – Development of TCP/IP</li>
+            <p>Researchers developed the TCP/IP communication protocol, 
+              which became the standard method for transferring data 
+              between computers. This allowed different networks to 
+              communicate with one another.</p>
+            <li>1983 – Birth of the Modern Internet</li>
+            <p>On January 1, 1983, ARPANET officially adopted TCP/IP. 
+              This milestone is considered the birth of the modern Internet.</p>
+            <li>1989–1991 – World Wide Web</li>
+            <p>Tim Berners-Lee invented the World Wide Web (WWW). He introduced HTML 
+              (HyperText Markup Language), HTTP (HyperText Transfer Protocol), and
+               web browsers, making the Internet easy to use for ordinary people.</p>
+            <li>1990s – Public Access</li>
+            <p>Internet Service Providers (ISPs) began offering Internet access to the 
+              public. Popular web browsers such as Netscape Navigator and Internet 
+              Explorer made browsing the web simple, leading to the rapid 
+              growth of websites.</p>
+            <li>2000s – Broadband and Social Media</li>
+            <p>Broadband Internet replaced slower dial-up connections, 
+              allowing faster access to online content. Social media, 
+              online shopping, video streaming, and cloud computing became 
+              widely used.</p>
+            <li>Today</li>
+            <p>Today, billions of people use the Internet every day. 
+              It supports modern technologies such as Cloud Computing, Artificial
+               Intelligence (AI), the Internet of Things (IoT), online education, 
+               remote work, digital banking, and many other online services</p>
+         </ol>
+
+    </div>
+
+      <h4 id="scrollspyHeading2">Second heading</h4>
+      <p>...</p>
+      <h4 id="scrollspyHeading3">Third heading</h4>
+      <p>...</p>
+      <h4 id="scrollspyHeading4">Fourth heading</h4>
+      <p>...</p>
+      <h4 id="scrollspyHeading5">Fifth heading</h4>
+      <p>...</p>
+    </div>
 
     <!--Footer-->
     <div class="card border-success mb-3">
-        <div class="card-footer bg-transparent bg-black">Footer</div>
+      <div class="card-footer bg-transparent bg-black">Footer</div>
     </div>
     <!--End Footer-->
     <script
