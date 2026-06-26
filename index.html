@@ -13,26 +13,23 @@
   </head>
   <body>
     <!--Navigation bar-->
-    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3 sticky-top">
       <a class="navbar-brand" href="#">Chathu</a>
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading1">Home</a>
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#Internet">Internet</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading3">HTML Tags</a>
+          <a class="nav-link" href="#HTMLTags">HTML Tags</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading4">Resources</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading5">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading6">Contact Us</a>
+          <a class="nav-link" href="#contact">Contact Us</a>
         </li>
           </ul>
         </li>
@@ -52,7 +49,7 @@
 
 
     <header class="bg-dark text-white text-center p-4">
-      <h1>Internet and Web Fundamentals</h1>
+      <h1 id="Internet">Internet and Web Fundamentals</h1>
     </header>
 
     <main class="container my-5">
@@ -60,6 +57,7 @@
       <section id="internet" class="mb-5">
         <h2 class="text-primary">Internet</h2>
         <article class="card p-3 shadow-sm">
+          <img src="Assets/image1.jpeg" class="img-thumbnail" alt="">
           <h3 class="text-info">What is Internet?</h3>
           <p>
             The Internet is a worldwide network of interconnected 
@@ -230,6 +228,7 @@
       <section id="services" class="mb-5">
         <h2 class="text-primary">Main Internet Services</h2>
 
+        <img src="Assets/services.jpeg" class="img-thumbnail" alt="">
         <ul class="list-group">
           <li class="list-group-item">Communication through the Email</li>
           <li class="list-group-item">World Wide Web (WWW)</li>
@@ -335,9 +334,9 @@
     </main>
 
     <!--HTML Tags-->
-    <h2>HTML Tags </h2>
+    <h2 id="HTMLTags">HTML Tags </h2>
 
-    <table class="table table-striped">
+    <table class="table table-striped p-md-5 shadow-lg table-light">
       <thead>
         <th>No:</th>
         <th>HTML Tag</th>
@@ -873,6 +872,128 @@
       </tbody>
     </table>
 
+    <section id="about" class="my-5">
+
+  <div class="container">
+
+    <h2 class="text-primary text-center mb-4">About This Website</h2>
+
+    <article class="card shadow-sm p-4">
+
+      <p>
+        This website is developed as part of the Institute of Computer Engineering Technology (ICET)
+        HTML Fundamentals assignment. It serves as a reference guide to understand the basic concepts
+        of the Internet and HTML.
+      </p>
+
+      <p>
+        The main purpose of this project is to demonstrate both theoretical knowledge and practical
+        skills in HTML development. It includes explanations of Internet concepts such as how the Internet
+        works, DNS, HTTP, web browsers, and Internet services.
+      </p>
+
+      <p>
+        In addition, the website provides a detailed reference of more than 75 HTML tags with examples,
+        helping students understand how each tag is used in real web development.
+      </p>
+
+      <p>
+        This project follows semantic HTML5 structure and uses Bootstrap for responsive design to ensure
+        a clean, user-friendly, and professional appearance.
+      </p>
+
+    </article>
+
+    <div class="row mt-4 text-center ">
+
+      <div class="col-md-4">
+        <div class="p-3 border rounded shadow-sm">
+          <h5>Objective</h5>
+          <p>To understand Internet concepts and HTML fundamentals clearly.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-3 border rounded shadow-sm">
+          <h5>Learning</h5>
+          <p>Improve HTML skills and semantic web development practices.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-3 border rounded shadow-sm">
+          <h5>Outcome</h5>
+          <p>Build a fully structured educational reference website.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="contact" class="my-5">
+
+  <div class="container">
+
+    <h2 class="text-primary text-center mb-4">Contact Us</h2>
+
+    <p class="text-center mb-4">
+      If you have any questions about this HTML Fundamentals Reference Website,
+      feel free to contact us using the form below.
+    </p>
+
+    <div class="row justify-content-center">
+
+      <div class="col-md-8">
+
+        <article class="card shadow-sm p-4">
+
+          <form>
+
+            <!-- Name -->
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Subject -->
+            <div class="mb-3">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-control" placeholder="Enter subject">
+            </div>
+
+            <!-- Message -->
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <!-- Button -->
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary px-4">
+                Send Message
+              </button>
+            </div>
+
+          </form>
+
+        </article>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
 
     <!--Footer-->
     <div class="container">
@@ -882,19 +1003,16 @@
             <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Internet</a>
+            <a href="internet" class="nav-link px-2 text-body-secondary">Internet</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">HTML Tags</a>
+            <a href="HTMLTags" class="nav-link px-2 text-body-secondary">HTML Tags</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Resources</a>
+            <a href="about" class="nav-link px-2 text-body-secondary">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Contact Us</a>
+            <a href="contact" class="nav-link px-2 text-body-secondary">Contact Us</a>
           </li>
         </ul>
         <p class="text-center text-body-secondary">&copy; 2026 Chathurani Thuduwage. All rights reserved.</p>
